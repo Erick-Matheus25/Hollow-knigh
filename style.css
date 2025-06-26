@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ece5f0;
+}
+
+header {
+  background-color: #360855;
+  color: #f5f5f5;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(245, 241, 241);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+  
+}
+
+section#sobre {
+  background-color: #d9eafd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+section#galeria {
+  text-align: center;
+  padding: 20px;
+}
+
+
+form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center; 
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+
+@media (max-width: 600px) {
+  form {
+    max-width: 90%;
+  }
+}
+#galeria{
+ 
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+
+.fundo1, .fundo2 {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  pointer-events: none;   
+}
+
+.fundo1 {
+  z-index: -2;
+  background-image: url('https://www.pockettactics.com/wp-content/sites/pockettactics/2022/01/Hollow-knight-wallpapers8-2.jpg');
+  opacity: 0.19;
+}
+
+.fundo2 {
+  z-index: -1;
+  background-image: url('https://www.pockettactics.com/wp-content/sites/pockettactics/2022/01/Hollow-knight-wallpapers8-2.jpg');
+  opacity: 0.19;
+}
+ table {
+  border: 2px solid rgb(243, 247, 247);
+  box-shadow: 0 0 8px rgb(241, 241, 241), 0 0 16px rgb(242, 243, 243);
+}
+tr:hover {
+  background-color: #ddd;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  border: 3px solid rgb(252, 255, 255);
+  box-shadow: 0 0 10px rgb(254, 255, 255), 0 0 20px rgb(255, 255, 255);
+}
